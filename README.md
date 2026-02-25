@@ -43,7 +43,19 @@ Not fixed bugs: <br>
 
 All issues:
 https://github.com/T3xtuRED/cinnamon/issues
-
+## Images
+<img src="images/p1.png"
+alt="activate-cinnamon"
+width="300"/><br>
+<img src="images/p2.png"
+alt="activate-cinnamon"
+width="300"/><br>
+<img src="images/p3.png"
+alt="activate-cinnamon"
+width="300"/><br>
+<img src="images/p4.png"
+alt="activate-cinnamon"
+width="300"/><br>
 ## Credits
 
 Licensed under Apache License Version 2
