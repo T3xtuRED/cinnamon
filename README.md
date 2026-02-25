@@ -11,7 +11,7 @@ Compatible with Android 8+.
 
 ## Info
 
-To use this keyboard, navigate to:
+To use this keyboard, navigate to: <br> tett <br>
 System > Keyboard > On-screen keyboard
 (and select Cinnamon)
 <img src="images/r2.png"
