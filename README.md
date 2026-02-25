@@ -24,6 +24,10 @@ To switch to active keyboard:
 <img src="images/setasactive.png"
 alt="activate-cinnamon"
 width="300"/>
+<br>
+<img src="images/sas2.png"
+alt="activate-cinnamon"
+width="300"/>
 ## Downloads
 
 Folder with APKs: <br>
