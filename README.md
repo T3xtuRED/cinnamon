@@ -12,13 +12,18 @@ Compatible with Android 8+.
 
 ## Info
 
-To use this keyboard, navigate to: <br>
+To use this keyboard, navigate to: <br><br>
 System > Keyboard > On-screen keyboard
-(and select Cinnamon) <br>
+(and select Cinnamon) <br> <br>
 <img src="images/r2.png"
 alt="activate-cinnamon"
 width="300"/>
-<br>
+<br><br>
+To switch to active keyboard:
+<br><br>
+<img src="images/setasactive.png"
+alt="activate-cinnamon"
+width="300"/>
 ## Downloads
 
 Folder with APKs: <br>
