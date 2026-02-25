@@ -13,7 +13,7 @@ Overlay controls can be found in:<br><br>
 <i>overlay/CinnamonOverlayController.kt</i><br><br>
 In this version, you can find:
 <ul><li>web browser (WebView)</li> 
-<li>settings (wifi, data, bluetooth and other)</li> <li>flashlight controller</li>
+<li>settings (WiFi, data, bluetooth and other)</li> <li>flashlight controller</li>
 <li>sensor data</li></ul>
 <br><br>
 
