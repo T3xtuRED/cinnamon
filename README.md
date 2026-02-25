@@ -59,7 +59,10 @@ width="700"/>
 
 ## Bugs
 Not fixed bugs: <br>
-<ul><li>Keyboard blocks touch events outside the keyboard</li><li>Some buttons not working inside WebView</li></ul>
+<ul><li>Keyboard blocks touch events outside the keyboard (for now unfixable)</li>
+<li>Some buttons not working inside WebView</li>
+<li>Brightness bar crashing the app</li>
+</ul>
 
 All issues:
 https://github.com/T3xtuRED/cinnamon/issues
