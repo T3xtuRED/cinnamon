@@ -1,14 +1,25 @@
 # Cinnamon - Simple-keyboard + built-in browser
 
 
- <img src="images/logo.png"
-      alt="main-screen"
-      width="50"/> <br>
+<img src="images/logo.png"
+alt="main-screen"
+width="50"/> <br>
 
-      
+
 ## About
 
-Compatible with Android 8+. 
+Cinnamon is a custom Android Input Method Editor (IME) based on AOSP LatinIME. It provides a fully functional keyboard together with overlay system that can display additional UI above the keyboard.<br>
+Overlay controls can be found in:<br><br>
+<i>overlay/CinnamonOverlayController.kt</i><br><br>
+In this version, you can find:
+<ul><li>web browser (WebView)</li> 
+<li>settings (wifi, data, bluetooth and other)</li> <li>flashlight controller</li>
+<li>sensor data</li></ul>
+<br><br>
+
+
+
+App is compatible with <b>Android 8</b> or newer.
 
 ## Info
 
@@ -37,12 +48,20 @@ https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.a
 <img src="images/dwnld.png"
 alt="activate-cinnamon"
 width="700"/>
+
+## Future updates
+<i>###### NOTHING PLANNED RIGHT NOW #####</i>
+
+
+
 ## Bugs
 Not fixed bugs: <br>
-<ul><li>Keyboard blocks touch events outside the keyboard</li></ul>
+<ul><li>Keyboard blocks touch events outside the keyboard</li><li>Some buttons not working inside WebView</li></ul>
 
 All issues:
 https://github.com/T3xtuRED/cinnamon/issues
+<br><br>
+This app is still in development so it may contain bugs. If you find any, please report.
 ## Images
 <img src="images/p1.png"
 alt="activate-cinnamon"
