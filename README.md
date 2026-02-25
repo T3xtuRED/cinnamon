@@ -3,7 +3,8 @@
 
  <img src="images/logo.png"
       alt="main-screen"
-      width="200"/> 
+      width="50"/> <br>
+
       
 ## About
 
@@ -27,6 +28,13 @@ https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.a
 <img src="images/dwnld.png"
 alt="activate-cinnamon"
 width="700"/>
+## Bugs
+Not fixed bugs: <br>
+<ul><li>Keyboard blocks touch events outside the keyboard</li></ul>
+
+All issues:
+https://github.com/T3xtuRED/cinnamon/issues
+
 ## Credits
 
 Licensed under Apache License Version 2
