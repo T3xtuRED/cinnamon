@@ -1,0 +1,109 @@
+<com.t3xturedstudios.cinnamon.latin.InputView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/inputViewStyle">
+
+    <!-- KLawiatura -->
+    <com.t3xturedstudios.cinnamon.keyboard.MainKeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layoutDirection="ltr"
+        android:fitsSystemWindows="true" />
+
+    <!-- FAB -->
+    <ImageButton
+        android:id="@+id/cinnamon_fab"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/english_ime_name"/>
+
+    <!-- OVERLAY -->
+    <FrameLayout
+        android:id="@+id/cinnamon_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#CC000000"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- BROWSER -->
+    <LinearLayout
+        android:id="@+id/browser_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- TOOLBAR -->
+        <LinearLayout
+            android:id="@+id/browser_controls"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#222222"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_back" />
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close" />
+
+            <ImageButton
+                android:id="@+id/btn_keyboard"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_keyboard_back" />
+
+            <ImageButton
+                android:id="@+id/btn_hide_controls"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_eye" />
+
+        </LinearLayout>
+
+        <!-- 🔥 TU WPADA WEBVIEW -->
+        <FrameLayout
+            android:id="@+id/browser_web_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- ⭐ PRZYCISK EYE — TERAZ NAD WSZYSTKIM -->
+    <ImageButton
+        android:id="@+id/btn_eye"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_eye_off"
+        android:visibility="gone"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp" />
+
+</com.t3xturedstudios.cinnamon.latin.InputView>

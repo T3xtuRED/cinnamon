@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    defaultConfig {
+        applicationId "com.t3xturedstudios.cinnamon"
+        compileSdk 36
+        minSdkVersion 24
+        targetSdkVersion 36
+        versionCode 144
+        versionName "6.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.t3xturedstudios.cinnamon'
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+dependencies {
+}
