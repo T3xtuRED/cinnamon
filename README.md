@@ -3,7 +3,7 @@
 
 <!-- <img src="images/r1.png"
       alt="main-screen"
-      width="500"/> -->
+      width="250"/> -->
       
 ## About
 
@@ -16,14 +16,16 @@ System > Keyboard > On-screen keyboard
 (and select Cinnamon)
 <img src="images/r2.png"
 alt="activate-cinnamon"
-width="500"/>
+width="250"/>
 ## Downloads
 
 Folder with APKs: <br>
 https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/ <br><br>
 Latest APK: <br>
 https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.apk
-
+<img src="images/r2.png"
+alt="activate-cinnamon"
+width="1000"/>
 ## Credits
 
 Licensed under Apache License Version 2
