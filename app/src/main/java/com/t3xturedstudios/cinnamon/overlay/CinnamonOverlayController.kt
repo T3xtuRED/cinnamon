@@ -93,9 +93,7 @@ class CinnamonOverlayController(
     // ============================================================
 
     private fun setupDynamicLayerButtons() {
-        val container = LinearLayout(root.context).apply {
-            orientation = LinearLayout.HORIZONTAL
-            gravity = Gravity.CENTER
+        val container = com.nex3z.flowlayout.FlowLayout(root.context).apply {
             setPadding(20, 20, 20, 20)
             isClickable = true
             isFocusable = true
@@ -105,7 +103,12 @@ class CinnamonOverlayController(
                 FrameLayout.LayoutParams.WRAP_CONTENT,
                 Gravity.CENTER
             )
+
+            // ⭐ spacing musi być float
+            setChildSpacing(20)
+            setRowSpacing(20f)
         }
+
 
         val googleBtn = createCircleButton(R.drawable.ic_google).apply {
             setOnClickListener { openBrowser("https://www.google.com") }
