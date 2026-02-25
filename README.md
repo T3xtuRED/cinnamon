@@ -26,7 +26,7 @@ Latest APK: <br>
 https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.apk
 <img src="images/dwnld.png"
 alt="activate-cinnamon"
-width="1000"/>
+width="700"/>
 ## Credits
 
 Licensed under Apache License Version 2
