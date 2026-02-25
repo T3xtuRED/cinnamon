@@ -1,9 +1,9 @@
 # Cinnamon - Simple-keyboard + built-in browser
 
 
-<img src="images/r1.png"
+<!-- <img src="images/r1.png"
       alt="main-screen"
-      width="500"/>
+      width="500"/> -->
       
 ## About
 
@@ -11,7 +11,7 @@ Compatible with Android 8+.
 
 ## Info
 
-To use this keyboard, navigate to: <br> tett <br>
+To use this keyboard, navigate to: <br>
 System > Keyboard > On-screen keyboard
 (and select Cinnamon)
 <img src="images/r2.png"
