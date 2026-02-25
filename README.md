@@ -40,11 +40,14 @@ width="300"/>
 alt="activate-cinnamon"
 width="300"/>
 ## Downloads
+Current version: <br><br>
+<b>ALPHA - 0.2</b>
+<br><br>
 
 Folder with APKs: <br>
 https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/ <br><br>
 Latest APK: <br>
-https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.apk
+https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alpha-v0.2.apk
 <img src="images/dwnld.png"
 alt="activate-cinnamon"
 width="700"/>
