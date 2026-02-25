@@ -1,9 +1,9 @@
 # Cinnamon - Simple-keyboard + built-in browser
 
 
-<!-- <img src="images/r1.png"
+ <img src="images/logo.png"
       alt="main-screen"
-      width="250"/> -->
+      width="200"/> 
       
 ## About
 
