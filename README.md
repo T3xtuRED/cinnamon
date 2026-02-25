@@ -19,7 +19,10 @@ alt="activate-cinnamon"
 width="500"/>
 ## Downloads
 
-
+Folder with APKs: <br>
+https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/ <br><br>
+Latest APK: <br>
+https://github.com/T3xtuRED/cinnamon/blob/master/ReadyAPK/Cinnamon_alfa-v0.0.1.apk
 
 ## Credits
 
