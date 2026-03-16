@@ -308,10 +308,14 @@ public final class InputLogic {
      * @param inputTransaction The transaction in progress.
      */
     private void handleSeparatorEvent(final Event event, final InputTransaction inputTransaction) {
+        if (mLatinIME.isBrowserActive && mLatinIME.cinnamonController != null) {
+            mLatinIME.cinnamonController.sendCharToWebView((char) event.mCodePoint);
+            return;
+        }
         sendKeyCodePoint(event.mCodePoint);
-
         inputTransaction.requireShiftUpdate(InputTransaction.SHIFT_UPDATE_NOW);
     }
+
 
     /**
      * Handle a press on the backspace key.

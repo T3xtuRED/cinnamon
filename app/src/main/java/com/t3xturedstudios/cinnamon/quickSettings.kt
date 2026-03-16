@@ -87,33 +87,57 @@ class QuickSettings(
         container.addView(volumeSlider)
 
         // ============================
-        // 🔆 JASNOŚĆ
-        // ============================
+// 🔆 JASNOŚĆ
+// ============================
         container.addView(makeLabel("Brightness"))
 
-        val currentBrightness = Settings.System.getInt(
-            context.contentResolver,
-            Settings.System.SCREEN_BRIGHTNESS,
-            125
-        )
+// Sprawdź czy mamy uprawnienie WRITE_SETTINGS
+        if (Settings.System.canWrite(context)) {
+            val currentBrightness = Settings.System.getInt(
+                context.contentResolver,
+                Settings.System.SCREEN_BRIGHTNESS,
+                125
+            )
 
-        val brightnessSlider = SeekBar(context).apply {
-            max = 255
-            progress = currentBrightness
-            setPadding(0, 10, 0, 30)
-            setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(sb: SeekBar?, value: Int, fromUser: Boolean) {
-                    Settings.System.putInt(
-                        context.contentResolver,
-                        Settings.System.SCREEN_BRIGHTNESS,
-                        value
-                    )
+            val brightnessSlider = SeekBar(context).apply {
+                max = 255
+                progress = currentBrightness
+                setPadding(0, 10, 0, 30)
+                setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+                    override fun onProgressChanged(sb: SeekBar?, value: Int, fromUser: Boolean) {
+                        try {
+                            Settings.System.putInt(
+                                context.contentResolver,
+                                Settings.System.SCREEN_BRIGHTNESS,
+                                value
+                            )
+                        } catch (e: SecurityException) {
+                            android.util.Log.e("QuickSettings", "Cannot write brightness", e)
+                        }
+                    }
+                    override fun onStartTrackingTouch(sb: SeekBar?) {}
+                    override fun onStopTrackingTouch(sb: SeekBar?) {}
+                })
+            }
+            container.addView(brightnessSlider)
+        } else {
+            // Nie mamy uprawnienia — pokaż przycisk do ustawień
+            val grantBtn = TextView(context).apply {
+                text = "Tap to grant brightness permission"
+                setTextColor(Color.parseColor("#4FC3F7"))
+                textSize = 14f
+                setPadding(0, 10, 0, 30)
+                setOnClickListener {
+                    val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS).apply {
+                        data = android.net.Uri.parse("package:${context.packageName}")
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                    context.startActivity(intent)
                 }
-                override fun onStartTrackingTouch(sb: SeekBar?) {}
-                override fun onStopTrackingTouch(sb: SeekBar?) {}
-            })
+            }
+            container.addView(grantBtn)
         }
-        container.addView(brightnessSlider)
+
 
         // ============================
         // 🟦 GRID IKON

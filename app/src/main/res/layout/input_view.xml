@@ -33,9 +33,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
+        android:background="#CC000000" />
+    <!-- <FrameLayout
+        android:id="@+id/cinnamon_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
         android:background="#CC000000"
         android:clickable="true"
-        android:focusable="true" />
+        android:focusable="true" /> -->
 
     <!-- BROWSER -->
     <LinearLayout
@@ -82,6 +88,14 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_eye" />
+            <ImageButton
+                android:id="@+id/btn_rotate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_rotate" />
+
+
 
         </LinearLayout>
 
